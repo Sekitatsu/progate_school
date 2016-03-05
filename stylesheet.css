@@ -144,8 +144,12 @@ h4, h5 {
   border: 1px solid white;
 }
 
-.answer {
+.container .answer {
   display:none;
+  font-size:14px;
+  color:white;
+  text-align:center;
+  width:98%;
 }
 
 /*lessonの中身はここから*/
