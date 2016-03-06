@@ -1,15 +1,14 @@
 $(function(){
-	$('.shinki').css('border-radius','5px');
-	$('.shinki').click(function(){
+	$('.btn-top-white').css('border-radius','5px');
+	$('.btn-top-white').click(function(){
 		var $answer = $('.answer')
 		if ($answer.hasClass('open')){
 			$answer.removeClass('open');
-			$answer.slideUp();
+			$answer.fadeOut();
 			$(this).text('もっと詳しく');
 		} else {
 			$answer.addClass('open');
-			$answer.slideDown();
-			$(this).find('.shinki').slideDown();
+			$answer.fadeIn();
 			$(this).text('閉じる');
 		};
 	});
