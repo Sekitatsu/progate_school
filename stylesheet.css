@@ -205,6 +205,17 @@ header {
   padding: 20px;
 }
 
+.text-contents {
+  margin:0 auto;
+  width:86%;
+  font-size:14px;
+  display:none;
+}
+
+.text-active {
+  display: block;
+}
+
 /*-------  ここまでlanguages  --------*/
 
 
