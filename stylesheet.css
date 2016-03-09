@@ -203,6 +203,7 @@ header {
   vertical-align: top;
   width: 38%;
   padding: 20px;
+  height:180px;
 }
 
 .text-contents {
@@ -525,5 +526,11 @@ footer {
   color: #999;
 }
 /*-------  ここまでfooter  --------*/
+
+
+
+
+
+
 
 
