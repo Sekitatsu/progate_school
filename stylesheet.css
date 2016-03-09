@@ -203,18 +203,14 @@ header {
   vertical-align: top;
   width: 38%;
   padding: 20px;
-  height:180px;
 }
 
-.text-contents {
-  margin:0 auto;
-  width:86%;
-  font-size:14px;
+.languages-box p {
   display:none;
 }
 
 .text-active {
-  display: block;
+  display:block;
 }
 
 /*-------  ここまでlanguages  --------*/
@@ -402,6 +398,10 @@ header {
   width: 100%;
 }
 
+.column-box img{
+  zoom:1.5;
+}
+
 .column-title {
   display: block;
   margin-top: 17px;
@@ -526,11 +526,5 @@ footer {
   color: #999;
 }
 /*-------  ここまでfooter  --------*/
-
-
-
-
-
-
 
 
