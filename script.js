@@ -1,8 +1,8 @@
 $(function(){
 	$('.btn-top-white').css('border-radius','5px');
-	$('.btn-top-white').click(function(){
+	$('.btn-top-white').click(function() {
 		var $answer = $('.answer')
-		if ($answer.hasClass('open')){
+		if ($answer.hasClass('open')) {
 			$answer.removeClass('open');
 			$answer.fadeOut();
 			$(this).text('もっと詳しく');
@@ -13,7 +13,7 @@ $(function(){
 		};
 	});
 	
-    $(function(){
+    // $(function(){
    　// header aをクリックした場合に処理
     $('header a').click(function() {
     // スクロールの速度
@@ -28,22 +28,22 @@ $(function(){
     // clickイベントを実行した後にリンク先に移動してしまうことを防ぐ
     return false;
     });
-  });
+  // });
   
     $('.languages-box').hover(
-    	function(){
+    	function() {
     		$(this).find('.text-contents').fadeIn('text-active').css('transition','all 0.2s');
     },
-    	function(){
+    	function() {
     		$(this).find('.text-contents').fadeOut('text-active');
   });
 
     $('.caption-defaultWrap').hover(
-    	function(){
+    	function() {
     		$(this).find('.inner-black').fadeIn();
     		$(this).css('background-size','120%').css('transition','all 0.2s');
     	},
-    	function(){
+    	function() {
     		$(this).find('.inner-black').fadeOut();
     		$(this).css('background-size','100%');
     	}

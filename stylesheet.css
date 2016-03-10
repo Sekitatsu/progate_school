@@ -77,6 +77,7 @@ header {
   background-color: #fff;
   line-height: 50px;
   box-shadow: -1px 1px 1px rgba(0,0,0,0.1);
+  z-index:100;
 }
 
 .header-title {
@@ -312,6 +313,10 @@ header {
 
 
 /*-------  ここからmentor  --------*/
+#mentor-carousel li {
+  background-color:rgba(0, 0, 0, 0.6);
+}
+
 .mentors-section {
   text-align: center;
 }
@@ -320,7 +325,11 @@ header {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 50px;
+}
 
+#mentor-carousel .mentor-box img{
+  display: inline-block;
+  z-index:2;
 }
 
 .mentor-image {
@@ -393,7 +402,7 @@ header {
   vertical-align: top;
   width: 40%;
   background-color: #fff;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   margin: 0 15px 30px;
   padding: 7px 7px 27px;
 }
