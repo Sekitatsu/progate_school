@@ -32,7 +32,7 @@ $(function(){
   
     $('.languages-box').hover(
     	function(){
-    		$(this).find('.text-contents').fadeIn('text-active').css('transition','all 0.8s');
+    		$(this).find('.text-contents').fadeIn('text-active').css('transition','all 0.2s');
     },
     	function(){
     		$(this).find('.text-contents').fadeOut('text-active');
@@ -41,11 +41,11 @@ $(function(){
     $('.caption-defaultWrap').hover(
     	function(){
     		$(this).find('.inner-black').fadeIn();
-    		$(this).css('background-size','120%')
+    		$(this).css('background-size','120%').css('transition','all 0.2s');
     	},
     	function(){
     		$(this).find('.inner-black').fadeOut();
-    		$(this).css('background-size','100%')
+    		$(this).css('background-size','100%');
     	}
     );
 });

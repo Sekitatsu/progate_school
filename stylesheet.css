@@ -421,8 +421,9 @@ header {
 }
 
 .caption-defaultWrap {
-  background-size:cover;
-  height:260px;
+  background-size: cover;
+  background-position: center;
+  height: 260px;
 }
 
 /*-------  ここまでcolumn  --------*/
