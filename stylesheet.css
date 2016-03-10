@@ -203,14 +203,18 @@ header {
   vertical-align: top;
   width: 38%;
   padding: 20px;
+  height:240px;
 }
 
-.languages-box p {
+.text-contents {
+  margin:0 auto;
+  width:86%;
+  font-size:14px;
   display:none;
 }
 
 .text-active {
-  display:block;
+  display: block;
 }
 
 /*-------  ここまでlanguages  --------*/
@@ -399,7 +403,7 @@ header {
 }
 
 .column-box img{
-  zoom:1.5;
+  /*zoom:1.5;*/
 }
 
 .column-title {
@@ -409,6 +413,18 @@ header {
   font-size: 17px;
   font-weight: 600;
 }
+
+.inner-black {
+  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  display: none;
+}
+
+.caption-defaultWrap {
+  background-size:cover;
+  height:260px;
+}
+
 /*-------  ここまでcolumn  --------*/
 
 

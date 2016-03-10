@@ -32,22 +32,20 @@ $(function(){
   
     $('.languages-box').hover(
     	function(){
-    	$(this).find('.text-contents').addClass('text-active');
+    		$(this).find('.text-contents').fadeIn('text-active').css('transition','all 0.8s');
     },
     	function(){
-    	$(this).find('.text-contents').removeClass('text-active');
+    		$(this).find('.text-contents').fadeOut('text-active');
   });
-  
-    
-    $('.column-box img').hover(function(){
-      $(this).css('zoom','1.5');
-    },function(){
 
-  });
-  
-  
-  
-  
+    $('.caption-defaultWrap').hover(
+    	function(){
+    		$(this).find('.inner-black').fadeIn();
+    		$(this).css('background-size','120%')
+    	},
+    	function(){
+    		$(this).find('.inner-black').fadeOut();
+    		$(this).css('background-size','100%')
+    	}
+    );
 });
-
-
