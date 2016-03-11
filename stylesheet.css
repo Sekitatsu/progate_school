@@ -250,7 +250,7 @@ header {
 .price-column {
   display: inline-block;
   vertical-align: top;
-  width: 28%;
+  width: 30%;
   padding: 25px 15px 15px 15px;
   margin: 20px 13px 50px;
   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
@@ -319,12 +319,18 @@ header {
 
 .mentors-section {
   text-align: center;
+  height:600px;
 }
 
 .mentor-box {
-  width: 80%;
   margin: 0 auto;
   margin-bottom: 50px;
+}
+
+#mentor-carousel {
+ width: 80%;
+ margin: 0 auto;
+ padding: 20px 0px;
 }
 
 #mentor-carousel .mentor-box img{
