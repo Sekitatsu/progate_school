@@ -91,11 +91,8 @@ header {
   font-family: 'Dosis', sans-serif;
 }
 
-.header-menu {}
-
-.header-menu-right {
+.header-menu {
   float: right;
-  margin-top: 10px;
 }
 
 .header-menu-right li {
@@ -156,7 +153,7 @@ header {
   margin-bottom: 40px;
 }
 
-.btn {
+.botton {
   display: inline-block;
   padding: 10px 20px;
   margin: 20px;
@@ -167,16 +164,15 @@ header {
   transition: all .3s;
 }
 
-.btn-top-white {
+.botton-top-white {
   background: rgba(250, 250, 250, 0.06);
   border: 1px solid rgba(250, 250, 250, 0.15);
   color: rgba(250, 250, 250, 0.9);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.btn-top-white:hover {
+.botton-top-white:hover {
   background: rgba(250, 250, 250, 0.05);
-  border: 1px solid rgba(250, 250, 250, 0.8);
   color: #fff !important;
   box-shadow: 0 0px 12px rgba(250, 250, 250, 0.15);
 }
@@ -222,21 +218,31 @@ header {
 
 
 /*-------  ここからfeatures  --------*/
-.features-section-top {
+#features .features-section-top {
   text-align: center;
   height: 376px;
 }
 
-.features-section-bottom {
+#features .features-section-bottom {
   padding-top: 120px;
 }
 
-.features-box {
+#features .features-box {
   display: inline-block;
   vertical-align: top;
-  width: 40%;
-  padding-left: 65px;
+  width: 44%;
+  margin-left: 65px;
   margin-bottom: 60px;
+}
+
+#features h5 {
+  color: #444;
+  font-size: 18px;
+}
+
+#features  p {
+  color: #888;
+  font-size:14px;
 }
 
 /*-------  ここまでfeatures  --------*/
@@ -297,13 +303,13 @@ header {
   padding: 18px 0;
 }
 
-.btn-pricing {
+.botton-pricing {
   background: #2d323a;
   border: 1px solid #24282e;
   color: #c9d1d6;
 }
 
-.btn-pricing:hover {
+.botton-pricing:hover {
   background: #384147;
   border: 1px solid #32383f;
   color: #e8edef !important;
@@ -313,21 +319,36 @@ header {
 
 /*-------  ここからModal  ----------*/
 .login-modal-wrapper {
-  position:fixed;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index:100;
-  display:none;
+  z-index: 100;
 }
 
+.modal-form {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+  width: 414px;
+  height: 550px;
+}
 
+#login-form-top {
+  width:100%;
+}
 
-
-
-
+#login-form-bottom {
+  
+}
 
 
 /*-------  ここまでModal  --------*/
@@ -426,11 +447,22 @@ header {
 .column-box {
   display: inline-block;
   vertical-align: top;
-  width: 40%;
+  width: 513px;
+  height: 372px;
   background-color: #fff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   margin: 0 15px 30px;
   padding: 7px 7px 27px;
+}
+
+.column-box a {
+  text-decoration: none;
+  color: #323A45;
+  transition: all .3s;
+}
+
+.column-box a:hover {
+  color: #0dc0c0;
 }
 
 .column-box img {
@@ -485,7 +517,7 @@ header {
   padding-bottom: 10px;
 }
 
-#contact input[type="text"], textarea {
+#contact input[type="text"],#contact textarea {
     margin: 0;
     padding: 0 10px;
     vertical-align: middle;
@@ -513,7 +545,7 @@ header {
   width: 58%;
 }
 
-.btn-contact {
+.botton-contact {
   font-family: 'Dosis', sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -525,6 +557,7 @@ header {
   transition: all .3s;
   margin: 10px 0;
   padding: 15px 35px;
+  border-radius: 5px;
 }
 
 .contact-about {
@@ -565,6 +598,19 @@ header {
   color: #323A45;
   padding: 5px;
   transition: all .3s;
+}
+
+.follow-us p {
+  display:inline-block;
+  text-decoration: none;
+  color: #323A45;
+  transition: all .3s;
+  margin-right: 15px;
+}
+
+.follow-us p:hover {
+  color: #0dc0c0;
+  cursor: pointer;
 }
 
 /*-------  ここまでsocial  --------*/

@@ -1,6 +1,6 @@
 $(function(){
-	$('.btn-top-white').css('border-radius','5px');
-	$('.btn-top-white').click(function() {
+	$('.botton-top-white').css('border-radius','5px');
+	$('.botton-top-white').click(function() {
 		var $answer = $('.answer')
 		if ($answer.hasClass('open')) {
 			$answer.removeClass('open');
