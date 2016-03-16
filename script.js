@@ -1,6 +1,7 @@
 $(function(){
-	$('.botton-top-white').css('border-radius','5px');
-	$('.botton-top-white').click(function() {
+	//--- 「もっと詳しく」ボタンはここから ---
+	$('.button-top-white').css('border-radius','5px');
+	$('.button-top-white').click(function() {
 		var $answer = $('.answer')
 		if ($answer.hasClass('open')) {
 			$answer.removeClass('open');
@@ -13,7 +14,8 @@ $(function(){
 		};
 	});
 	
-    // $(function(){
+	//--- ヘッダーのスクロールナビはここから ---
+
    　// header aをクリックした場合に処理
     $('header a').click(function() {
     // スクロールの速度
@@ -28,8 +30,8 @@ $(function(){
     // clickイベントを実行した後にリンク先に移動してしまうことを防ぐ
     return false;
     });
-  // });
-  
+ 	
+ 	//--- 学習言語ホバー機能はここから ---
     $('.languages-box').hover(
     	function() {
     		$(this).find('.text-contents').fadeIn('text-active').css('transition','all 0.2s');
@@ -38,6 +40,7 @@ $(function(){
     		$(this).find('.text-contents').fadeOut('text-active');
   });
 
+    // --- コラム画像ホバー機能 ---
     $('.caption-defaultWrap').hover(
     	function() {
     		$(this).find('.inner-black').fadeIn();
@@ -48,6 +51,14 @@ $(function(){
     		$(this).css('background-size','100%');
     	}
     );
+
+	// modal部分はここから 
+	$('.button-pricing').click(function(){
+		$('#login-modal').fadeIn();
+	})
+	$('.close-modal').click(function(){
+		$('#login-modal').fadeOut()
+	})
 });
 
 
