@@ -326,30 +326,70 @@ header {
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 100;
+  display:none;
 }
 
 .modal-form {
   position: absolute;
   top: 20%;
-  left: 34%;
+  left: 27%;
   background-color: #e6ecf0;
-  padding: 20px 0 40px;
+  padding: 40px 0px 40px 0px;
   border-radius: 10px;
-  width: 450px;
+  width: 550px;
   height: auto;
   text-align: center;
-  width: 414px;
-  height: 550px;
+  height: 500px;
 }
 
-#login-form-top {
-  width:100%;
+#login-form-top h2{
+  width: 100%;
+  color: #5f5d60;
+  font-size: 30px;
 }
 
-#login-form-bottom {
-  
+select {
+  height: 40px;
+  width: 400px;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-size: 12px;
+  padding-left:10px;
+  border: 1px solid #d0d5d8;
 }
 
+input {
+  width: 400px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  padding-left: 10px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+textarea {
+  font-size: 12px;
+  width: 400px;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #d0d5d8;
+}
+
+#submit-botton {
+  color:white;
+  width:400px;
+  margin:0 auto;
+  background-color:#5dca88;
+  padding:10px 0px;
+  border-radius: 5px;
+}
+
+#submit-botton:hover {
+  cursor:pointer;
+}
 
 /*-------  ここまでModal  --------*/
 
@@ -624,5 +664,9 @@ footer {
   color: #999;
 }
 /*-------  ここまでfooter  --------*/
+
+
+
+
 
 
