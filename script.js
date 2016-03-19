@@ -56,28 +56,44 @@ $(function(){
 	$('.button-left').click(function(){
 		$('#twoweeks-modal').fadeIn();
 		$('.select_pulldown').val("A");
-	})
+	});
 	$('.close-modal').click(function(){
-		$('#twoweeks-modal').fadeOut()
-	})
+		$('#twoweeks-modal').fadeOut();
+	});
 
 
 	$('.button-center').click(function(){
 		$('#onemonth-modal').fadeIn();
 		$('.select_pulldown').val("B");
-	})
+	});
 	$('.close-modal').click(function(){
-		$('#onemonth-modal').fadeOut()
-	})
+		$('#onemonth-modal').fadeOut();
+	});
 
 
 	$('.button-right').click(function(){
 		$('#twomonths-modal').fadeIn();
 		$('.select_pulldown').val("C");
-	})
+	});
 	$('.close-modal').click(function(){
-		$('#twomonths-modal').fadeOut()
-	})
+		$('#twomonths-modal').fadeOut();
+	});
+
+	// 画像の絞り込みはここから
+
+	$('.filters-wrapper .filter-item').click(function({
+		var filter = $(this).attr('id');
+		$('.filter-item').removeClass('filter-item-active');
+		$(this).addClass('filter-item-active');
+		$('.column-box').hide();
+		if(filter == 'columns') {
+			$('.column-box .column').show();
+		} else if(filter == 'tips') {
+			$('.column-box .tips').show();
+		} else {
+			$('.column-box').show();
+		}
+	});
 });
 
 

@@ -520,10 +520,6 @@ header {
   width: 100%;
 }
 
-.column-box img{
-  /*zoom:1.5;*/
-}
-
 .column-title {
   display: block;
   margin-top: 17px;
