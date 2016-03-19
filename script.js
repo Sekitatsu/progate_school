@@ -53,11 +53,30 @@ $(function(){
     );
 
 	// modal部分はここから 
-	$('.button-pricing').click(function(){
-		$('#login-modal').fadeIn();
+	$('.button-left').click(function(){
+		$('#twoweeks-modal').fadeIn();
+		$('.select_pulldown').val("A");
 	})
 	$('.close-modal').click(function(){
-		$('#login-modal').fadeOut()
+		$('#twoweeks-modal').fadeOut()
+	})
+
+
+	$('.button-center').click(function(){
+		$('#onemonth-modal').fadeIn();
+		$('.select_pulldown').val("B");
+	})
+	$('.close-modal').click(function(){
+		$('#onemonth-modal').fadeOut()
+	})
+
+
+	$('.button-right').click(function(){
+		$('#twomonths-modal').fadeIn();
+		$('.select_pulldown').val("C");
+	})
+	$('.close-modal').click(function(){
+		$('#twomonths-modal').fadeOut()
 	})
 });
 

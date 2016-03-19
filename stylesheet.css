@@ -318,7 +318,7 @@ header {
 
 
 /*-------  ここからModal  ----------*/
-.login-modal-wrapper {
+.modal-wrapper {
   position: fixed;
   top: 0;
   right: 0;
@@ -350,7 +350,7 @@ header {
   cursor: pointer;
 }
 
-#login-form-top h2{
+.modal-form h2{
   width: 100%;
   color: #5f5d60;
   font-size: 30px;
