@@ -57,7 +57,7 @@ $(function(){
 		var h2_text = $(this).parent('h2').text();
 		$('.modal-form').find('h2').text('【' + h2_text + '】に申し込む')
 		$('#login-modal').fadeIn();
-		var selection = $('.select_pulldown').find('option');
+		var selection = $('.select_pulldown').find('value');
 		var value_text = $(this).text(selection);
 		$('.select_pulldown').val(value_text);
 	});
