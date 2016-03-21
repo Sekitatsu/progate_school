@@ -53,47 +53,33 @@ $(function(){
     );
 
 	// modal部分はここから 
-	$('.button-left').click(function(){
-		$('#twoweeks-modal').fadeIn();
-		$('.select_pulldown').val("A");
+	$('.button-pricing').click(function(){
+		var h2_text = $(this).parent('h2').text();
+		$('.modal-form').find('h2').text('【' + h2_text + '】に申し込む')
+		$('#login-modal').fadeIn();
+		var selection = $('.select_pulldown').find('option');
+		var value_text = $(this).text(selection);
+		$('.select_pulldown').val(value_text);
 	});
 	$('.close-modal').click(function(){
-		$('#twoweeks-modal').fadeOut();
-	});
-
-
-	$('.button-center').click(function(){
-		$('#onemonth-modal').fadeIn();
-		$('.select_pulldown').val("B");
-	});
-	$('.close-modal').click(function(){
-		$('#onemonth-modal').fadeOut();
-	});
-
-
-	$('.button-right').click(function(){
-		$('#twomonths-modal').fadeIn();
-		$('.select_pulldown').val("C");
-	});
-	$('.close-modal').click(function(){
-		$('#twomonths-modal').fadeOut();
+		$('#login-modal').fadeOut();
 	});
 
 	// 画像の絞り込みはここから
 
-	$('.filters-wrapper .filter-item').click(function({
-		var filter = $(this).attr('id');
-		$('.filter-item').removeClass('filter-item-active');
-		$(this).addClass('filter-item-active');
-		$('.column-box').hide();
-		if(filter == 'columns') {
-			$('.column-box .column').show();
-		} else if(filter == 'tips') {
-			$('.column-box .tips').show();
-		} else {
-			$('.column-box').show();
-		}
-	});
+	// $('.filters-wrapper .filter-item').click(function({
+	// 	var filter = $(this).attr('id');
+	// 	$('.filter-item').removeClass('filter-item-active');
+	// 	$(this).addClass('filter-item-active');
+	// 	$('.column-box').hide();
+	// 	if(filter == 'columns') {
+	// 		$('.column-box .column').show();
+	// 	} else if(filter == 'tips') {
+	// 		$('.column-box .tips').show();
+	// 	} else {
+	// 		$('.column-box').show();
+	// 	}
+	// });
 });
 
 
