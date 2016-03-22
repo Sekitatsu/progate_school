@@ -54,12 +54,12 @@ $(function(){
 
 	// modal部分はここから 
 	$('.button-pricing').click(function(){
-		var h2_text = $(this).parent('h2').text();
+		var h2_text = $(this).closest('h2').text();
 		$('.modal-form').find('h2').text('【' + h2_text + '】に申し込む')
 		$('#login-modal').fadeIn();
-		var selection = $('.select_pulldown').find('value');
-		var value_text = $(this).text(selection);
-		$('.select_pulldown').val(value_text);
+
+		var select_tag = $(this).$('.select_pulldown').find('h2').text();
+		$('.select_pulldown').find('option').text(select_tag);
 	});
 	$('.close-modal').click(function(){
 		$('#login-modal').fadeOut();
