@@ -54,12 +54,11 @@ $(function(){
 
 	// modal部分はここから 
 	$('.button-pricing').click(function(){
-		var h2_text = $(this).closest('h2').text();
+		var id=$(this).attr('value-option');
+		var h2_text=$("#"+id).text();
 		$('.modal-form').find('h2').text('【' + h2_text + '】に申し込む')
 		$('#login-modal').fadeIn();
-
-		var select_tag = $(this).$('.select_pulldown').find('h2').text();
-		$('.select_pulldown').find('option').text(select_tag);
+		$('.select_pulldown').val(id);
 	});
 	$('.close-modal').click(function(){
 		$('#login-modal').fadeOut();
@@ -67,20 +66,24 @@ $(function(){
 
 	// 画像の絞り込みはここから
 
-	// $('.filters-wrapper .filter-item').click(function({
-	// 	var filter = $(this).attr('id');
-	// 	$('.filter-item').removeClass('filter-item-active');
-	// 	$(this).addClass('filter-item-active');
-	// 	$('.column-box').hide();
-	// 	if(filter == 'columns') {
-	// 		$('.column-box .column').show();
-	// 	} else if(filter == 'tips') {
-	// 		$('.column-box .tips').show();
-	// 	} else {
-	// 		$('.column-box').show();
-	// 	}
-	// });
+	$('.filter-item').click(function(){
+		var filter=$(this).attr('id');
+		$('.filter-item').removeClass('filter-item-active');
+		$(this).addClass('filter-item-active');
+	 	$('.column-box').hide();
+	 	if(filter == 'column') {
+	 	  $('.column').show();
+		} else if(filter == 'tip') {
+			$('.tip').show();
+		} else {
+			$('.column-box').show();
+		}
+	});
 });
+
+
+
+
 
 
 

@@ -130,38 +130,38 @@
           <h3 id="pricing">コースを選ぶ</h3>
         </div>
         <div class="price-column">
-          <h2>短期集中2週間コース</h2>
+          <h2  id="first-pricing">短期集中2週間コース</h2>
           <h3>3万円</h3>
           <ul>
             <li>期間 : 2週間</li>
             <li>チャットでの質問 : ◯ </li>
             <li>オフィスでの質問 : ◯ </li>
             <li>
-              <div class="button button-pricing">申し込む</div>
+              <div class="button button-pricing" value-option="first-pricing">申し込む</div>
             </li>
           </ul>
         </div>
         <div class="price-column price-column-green">
-          <h2>通常1ヶ月コース</h2>
+          <h2 id="second-pricing">通常1ヶ月コース</h2>
           <h3>5万円</h3>
           <ul>
             <li>期間 : 1ヶ月</li>
             <li>チャットでの質問 : ◯ </li>
             <li>オフィスでの質問 : ◯ </li>
             <li>
-              <div class="button button-pricing">申し込む</div>
+              <div class="button button-pricing" value-option="second-pricing">申し込む</div>
             </li>
           </ul>
         </div>
         <div class="price-column">
-          <h2>土日開発2ヶ月コース</h2>
+          <h2 id="third-pricing">土日開発2ヶ月コース</h2>
           <h3>8万円</h3>
           <ul>
             <li>期間 : 2ヶ月</li>
             <li>チャットでの質問 : ◯ </li>
             <li>オフィスでの質問 : ◯ </li>
             <li>
-              <div class="button button-pricing">申し込む</div>
+              <div class="button button-pricing"  value-option="third-pricing">申し込む</div>
             </li>
           </ul>
         </div>
@@ -180,9 +180,9 @@
           <form action=#>
             <p>
               <select name="form-pulldown" class="select_pulldown">
-                <option value="A">短期集中2週間コース</option>
-                <option value="B">通常1ヶ月コース</option>
-                <option value="C">土日開発2ヶ月コース</option>
+                <option value="first-pricing">短期集中2週間コース</option>
+                <option value="second-pricing">通常1ヶ月コース</option>
+                <option value="third-pricing">土日開発2ヶ月コース</option>
               </select>
             </p>
             <p><input class="apply-form" type="text" placeholder="氏名"></p>
@@ -239,12 +239,12 @@
     <div id="columns" class="columns-section gray-section">
       <div class="container">
         <div class="section-title">
-          <h3 id="columns">コラム</h3>
+          <h3>コラム</h3>
         </div>
         <div class="filters-wrapper">
-          <div class="filter-item-active filter-item">show all </div>
-          <div class="filter-item" id="columns">コラム</div>
-          <div class="filter-item" id="tips">プログラミングTips</div>
+          <div class="filter-item-active filter-item" id="all">show all </div>
+          <div class="filter-item" id="column">コラム</div>
+          <div class="filter-item" id="tip">プログラミングTips</div>
         </div>
         <div class="wrapper-outer">
           <div class="column-box column">
@@ -302,7 +302,7 @@
             <div>HTML / CSS</div>
           </div>
         </div>
-        <div class="button button-pricing">Load More</div>
+        <div class="button btn-loading">Load More</div>
       </div>
     </div>
     <!-- Contact -->

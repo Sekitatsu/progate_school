@@ -540,6 +540,10 @@ header {
   height: 260px;
 }
 
+.btn-loading:hover {
+  color:#333;
+}
+
 /*-------  ここまでcolumn  --------*/
 
 
@@ -671,6 +675,10 @@ footer {
   color: #999;
 }
 /*-------  ここまでfooter  --------*/
+
+
+
+
 
 
 
