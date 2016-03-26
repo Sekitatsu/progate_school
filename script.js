@@ -79,6 +79,19 @@ $(function(){
 			$('.column-box').show();
 		}
 	});
+
+	// フォーム機能はここから
+
+	$('.button-contact').click(function(){
+		var flag=0;
+		$(this).
+		if(email == "" || subject == "" || message == ""){
+			flag=1;
+		}
+		else if
+		$('.error-text').text('入力して下さい');
+		$('.contact-form h4').text('お問い合わせありがとうございます');
+	})
 });
 
 

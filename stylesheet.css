@@ -568,6 +568,11 @@ header {
   padding-bottom: 10px;
 }
 
+.error-text {
+  color: #F51414;
+  height: 20px;
+}
+
 #contact input[type="text"],#contact textarea {
     margin: 0;
     padding: 0 10px;
