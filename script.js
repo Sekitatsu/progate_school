@@ -83,28 +83,28 @@ $(function(){
 	// フォーム機能はここから
 
 	$('.button-contact').click(function(){
+		$('.error_text').text('');
 		var flag = 0;
 		if($('form input[name="email"]').val() == ''){
-			$('.error_text').text('入力してください');
+			$('form input[name="email"]').prev().text('入力してください');
 		} else {
 			flag += 1;
 		}
 
 		if($('form input[name="subject"]').val() == ''){
-			$('.error_text').text('入力してください');
+			$('form input[name="subject"]').prev().text('入力してください');
 		} else {
 			flag += 1;
 		}
 
-		if($('form input[name="message"]').val() == ''){
-			$('.error_text').text('入力してください');
+		if($('form textarea[name="message"]').val() == ''){
+			$('form textarea[name="message"]').prev().text('入力してください');
 		} else {
 			flag += 1;
 		}
 	// }
 		if (flag == 3) {
-			$('.contact-form h4').text('お問い合わせありがとうございます');
-			$('.contact-form form').css('display','none');
+			$('.contact-form').html('<h4>お問い合わせありがとうございます</h4>');
 		}
 		return false;
 		
