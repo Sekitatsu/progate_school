@@ -83,14 +83,31 @@ $(function(){
 	// フォーム機能はここから
 
 	$('.button-contact').click(function(){
-		var flag=0;
-		$(this).
-		if(email == "" || subject == "" || message == ""){
-			flag=1;
+		var flag = 0;
+		if($('form input[name="email"]').val() == ''){
+			$('.error_text').text('入力してください');
+		} else {
+			flag += 1;
 		}
-		else if
-		$('.error-text').text('入力して下さい');
-		$('.contact-form h4').text('お問い合わせありがとうございます');
+
+		if($('form input[name="subject"]').val() == ''){
+			$('.error_text').text('入力してください');
+		} else {
+			flag += 1;
+		}
+
+		if($('form input[name="message"]').val() == ''){
+			$('.error_text').text('入力してください');
+		} else {
+			flag += 1;
+		}
+	// }
+		if (flag == 3) {
+			$('.contact-form h4').text('お問い合わせありがとうございます');
+			$('.contact-form form').css('display','none');
+		}
+		return false;
+		
 	})
 });
 
